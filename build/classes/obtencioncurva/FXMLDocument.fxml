@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="693.0" styleClass="background" stylesheets="@CSS.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="obtencioncurva.FXMLDocumentController">
+   <children>
+      <Label alignment="CENTER" layoutX="221.0" layoutY="2.0" prefHeight="62.0" prefWidth="243.0" styleClass="label-header" text="Ficha técnica" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <VBox layoutX="65.0" layoutY="61.0" prefHeight="200.0" prefWidth="100.0" spacing="28.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="117.0" text="Grados °C" />
+            <Label prefHeight="17.0" prefWidth="128.0" text="Voc" />
+            <Label prefHeight="17.0" prefWidth="179.0" text="Icc" />
+            <Label prefHeight="17.0" prefWidth="122.0" text="Vmax" />
+            <Label prefHeight="17.0" prefWidth="123.0" text="Imax" />
+            <Label prefHeight="17.0" prefWidth="153.0" text="Pmax" />
+            <Label prefHeight="17.0" prefWidth="177.0" text="W/m" />
+            <Label text="Largo cm" />
+            <Label text="Ancho cm" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox layoutX="182.0" layoutY="60.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <TextField fx:id="txt_grados" />
+            <TextField fx:id="txt_voc" />
+            <TextField fx:id="txt_icc" />
+            <TextField fx:id="txt_vmax" />
+            <TextField fx:id="txt_imax" />
+            <TextField fx:id="txt_pmax" />
+            <TextField fx:id="txt_irradiancia" />
+            <TextField fx:id="txt_largo" />
+            <TextField fx:id="txt_ancho" />
+         </children>
+      </VBox>
+      <Button fx:id="btn_capturarDatos" layoutX="438.0" layoutY="364.0" mnemonicParsing="false" onAction="#capturarDatos" text="Guardar Datos" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="416.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoUP.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="132.0" layoutY="451.0" prefHeight="12.0" prefWidth="0.0" styleClass="label-bright" text="2" />
+      <Label layoutX="128.0" layoutY="403.0" prefHeight="12.0" prefWidth="0.0" styleClass="label-bright" text="2" />
+      <Label layoutX="99.0" layoutY="356.0" prefHeight="12.0" prefWidth="0.0" styleClass="label-bright" text="2" />
+   </children>
+</Pane>

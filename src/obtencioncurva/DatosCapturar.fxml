@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="986.0" styleClass="background" stylesheets="@CSS.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="obtencioncurva.DatosCapturarController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="14.0" styleClass="label-header" text="Banco de pruebas solar UP Chiapas" />
+      <VBox layoutX="78.0" layoutY="118.0" prefHeight="111.0" prefWidth="121.0" spacing="34.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="126.0" text="Grados °C" />
+            <Label prefHeight="17.0" prefWidth="168.0" text="W/m" />
+            <Label prefHeight="17.0" prefWidth="123.0" text="Título del gráfico" />
+         </children>
+      </VBox>
+      <VBox layoutX="225.0" layoutY="109.0" prefHeight="110.0" prefWidth="100.0" spacing="15.0">
+         <children>
+            <TextField fx:id="txt_grados" />
+            <TextField fx:id="txt_irradiancia" />
+            <TextField fx:id="txt_titulo" />
+         </children>
+      </VBox>
+      <Button fx:id="btn_abrirArchivo" layoutX="373.0" layoutY="124.0" mnemonicParsing="false" onAction="#cargarArchivo" prefHeight="25.0" prefWidth="153.0" text="Abrir archivo" />
+      <Button fx:id="btn_graficar" layoutX="373.0" layoutY="170.0" mnemonicParsing="false" onAction="#graficar" prefHeight="25.0" prefWidth="153.0" text="Graficar I VS V" />
+      <Pane fx:id="paneGrafica" layoutX="14.0" layoutY="259.0" prefHeight="357.0" prefWidth="561.0" styleClass="background-sad" />
+      <Button fx:id="btn_guardarGrafica" layoutX="559.0" layoutY="122.0" mnemonicParsing="false" onAction="#guardarGrafica" prefHeight="33.0" prefWidth="172.0" text="Guardar Gráfica" />
+      <VBox layoutX="605.0" layoutY="265.0" prefHeight="142.0" prefWidth="302.0" spacing="15.0">
+         <children>
+            <Label fx:id="label_factorF" text="Factor de forma" />
+            <Label fx:id="label_pmax" text="Pmax" />
+            <Label fx:id="lable_eficiencia" text="Eficiencia" />
+            <Label fx:id="label_pmaxF" text="Pmax Calculada" />
+         </children>
+      </VBox>
+      <Button fx:id="btm_graficar2" layoutX="559.0" layoutY="168.0" mnemonicParsing="false" onAction="#graficarCurva2" prefHeight="33.0" prefWidth="172.0" text="Graficar P VS V" />
+      <Label layoutX="112.0" layoutY="173.0" styleClass="label-bright" text="2" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="670.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoUP.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
